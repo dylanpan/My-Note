@@ -11,9 +11,9 @@
 
  (1)做法：
  MailManager.getUnreadNum = function()
-	—由MailServer:updateUnreadMailNum中获取未读邮件数量
+ 	—由MailServer:updateUnreadMailNum中获取未读邮件数量
 	return unreadNum
- end
+end
  
  (2)做法：
  其他的MailManager方法中获取对应未读邮件数量，然后eventDispatch，最后由getUnreadNum方法返回
@@ -22,17 +22,17 @@
 
  (1)做法：
  将updateUnreadMailNum方法添加到监听
-
+ 
  MailServer.updateUnreadMailNum = function ()
-	(1)sendPackage
+ 	(1)sendPackage
 	(2)getData
 	(3)filterData
 	(4)eventDispatch(unreadNum)
- end
+end
  
 4.从哪里开始触发mail server持续发送请求
 
  (1)做法：从加载主页面【home scene】中的update方法里面发起
  update = function ()
-	
+ 
  end
