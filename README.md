@@ -24,15 +24,16 @@ end
  将updateUnreadMailNum方法添加到监听
  
  MailServer.updateUnreadMailNum = function ()
- 	(1)sendPackage
-	(2)getData
-	(3)filterData
-	(4)eventDispatch(unreadNum)
+    (1)sendPackage
+    (2)getData
+    (3)filterData
+    (4)eventDispatch(unreadNum)
 end
  
 4.从哪里开始触发mail server持续发送请求
 
  (1)做法：从加载主页面【home scene】中的update方法里面发起
+ 
  update = function ()
  
  end
